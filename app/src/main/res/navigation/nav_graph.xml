@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainScreenFragment">
+
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="an.gal.android.goodideanote.idea_list.IdealListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_idea_list">
+        <action
+            android:id="@+id/toNewIdeaFragment"
+            app:destination="@id/newIdeaFragment" />
+        <action
+            android:id="@+id/toDetailsIdeaFragment"
+            app:destination="@id/ideaDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newIdeaFragment"
+        android:name="an.gal.android.goodideanote.idea_new.NewIdeaFragment"
+        android:label="New Idea"
+        tools:layout="@layout/fragment_new_idea" />
+    <fragment
+        android:id="@+id/ideaDetailsFragment"
+        android:name="an.gal.android.goodideanote.idea_details.IdeaDetailsFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_idea_details">
+        <argument
+            android:name="ideaId"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+
+    <!--Settings fragment-->
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="an.gal.android.goodideanote.settings.SettingsFragment"
+        android:label="Settings" />
+
+    <!--Global action-->
+    <action
+        android:id="@+id/toSettingsFragment"
+        app:destination="@id/settingsFragment" />
+
+</navigation>

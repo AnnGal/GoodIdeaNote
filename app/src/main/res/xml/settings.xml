@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        app:key="database_category"
+        app:title="Database settings">
+
+        <SwitchPreferenceCompat
+            app:key="@string/settings_database_key"
+            app:defaultValue="true"
+            app:title="Use Room library"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="purpose_category"
+        app:title="Ideas">
+
+        <SwitchPreferenceCompat
+            app:key="@string/settings_skill_key"
+            app:defaultValue="true"
+            app:icon="@drawable/ic_skills"
+            app:title="@string/purpose_skill_label"/>
+
+        <SwitchPreferenceCompat
+            app:key="@string/settings_home_key"
+            app:defaultValue="true"
+            app:icon="@drawable/ic_family"
+            app:switchTextOn="Family ideas shown"
+            app:switchTextOff="Family ideas disabled"
+            app:title="@string/purpose_home_label"/>
+
+        <SwitchPreferenceCompat
+            app:key="@string/settings_work_key"
+            app:defaultValue="true"
+            app:icon="@drawable/ic_work"
+            app:switchTextOn="Work ideas shown"
+            app:switchTextOff="Work ideas disabled"
+            app:title="@string/purpose_work_label"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

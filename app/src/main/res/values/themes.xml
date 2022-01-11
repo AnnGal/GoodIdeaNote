@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GoodIdeaNote" parent="Theme.MaterialComponents.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yellowVivid</item>
+        <item name="colorPrimaryVariant">@color/yellowDark</item>
+        <item name="colorOnPrimary">@color/brown</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/redVivid</item>
+        <item name="colorSecondaryVariant">@color/orange</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.GoodIdeaNote.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.GoodIdeaNote.AppBarOverlay" parent="ThemeOverlay.AppCompat.DayNight.ActionBar" />
+
+    <style name="Theme.GoodIdeaNote.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AlertDialog.ChangeColors" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:colorAccent">@color/brown</item>
+    </style>
+
+</resources>
